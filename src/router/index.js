@@ -30,5 +30,14 @@ export default new Router({
         footer: Footer,
       }
     },
+    {
+      path: '/helloworld',
+      name: 'HelloWorld',
+      components: {
+        default: HelloWorld,
+        header: Header,
+        footer: Footer,
+      }
+    }
   ]
 })
