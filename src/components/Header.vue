@@ -11,6 +11,7 @@
 
             <router-link :to="'/'">{{header.header1}}</router-link>
             <router-link :to="'about'">{{header.header2}}</router-link>
+            <a href="../assets/Resume_WeiCH.pdf">{{header.header3}}</a>
             <router-link :to="'resume'">{{header.header3}}</router-link>
             <router-link :to="'work'">{{header.header4}}</router-link>
 
