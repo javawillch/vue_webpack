@@ -1,11 +1,11 @@
 <template>
     <div class="page-about">
-        <!-- <iframe src="../components/Sphere.vue" frameborder="none" style="width: 100%; height: 100vh; margin: 0; position: absolute; left: 0; top: 0; z-index: -1;"></iframe>   -->
+        <iframe src="./Sphere.html" frameborder="none" style="width: 100%; height: 100vh; margin: 0; position: absolute; left: 0; top: 0;"></iframe>  
  
-        <div class="col-sm-12 col-info text-left">
+ <!-- ; margin: 0; position: absolute; left: 0; top: 0; z-index: -1; -->
+        <!-- <div class="col-sm-12 col-info text-left">
             <h1>Wei Chen-Huang</h1>
             <h5 class="mt-1">Data Technologist, I spark joy in coding and data mining.</h5>
-            <!-- <pre>MS in Integrated Digital Media @ New York University</pre> -->
             <br />
             <p>
               I’m a data-driven and insightful engineer who is passionate about growing teams and dreams.<br />
@@ -17,13 +17,13 @@
               <li><b>2017</b><span> | Class Leader @ Institute for Information Industry</span></li>
               <li><b>2015-2017</b><span> | Business Analyst / Sales Representive @ Jurassic Color Diamond</span></li>
             </ul>
-        </div>
+        </div> -->
   </div>   
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'HelloVue',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

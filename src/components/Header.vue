@@ -16,7 +16,7 @@
             <router-link :to="'work'">{{header.header4}}</router-link>
 
             <router-link class="nav-link" :to="'/'"> RL hello</router-link>
-            <router-link class="nav-link" :to="'H2'"> RL helloVUE</router-link>        
+            <router-link class="nav-link" :to="'about'"> RL helloVUE</router-link>        
         </div>     
     </div>   
 </template>

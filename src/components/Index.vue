@@ -3,6 +3,7 @@
     <!-- <img src="./../assets/DSC_2996.jpg">
     <h1>{{ msg }}</h1>
     <h2>Index</h2> -->
+    
     <div class="itemlst">
         <div class="item">
             <div class="pic">

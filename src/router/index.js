@@ -5,7 +5,8 @@ import HelloVue from '@/components/HelloVue'
 import Index from '@/components/Index'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-
+import Sphere from '@/components/Sphere'
+// import About from '@/components/About'
 
 
 Vue.use(Router)
@@ -35,6 +36,15 @@ export default new Router({
       name: 'HelloWorld',
       components: {
         default: HelloWorld,
+        header: Header,
+        footer: Footer,
+      }
+    },
+    {
+      path: '/sphere',
+      name: 'Sphere',
+      components: {
+        default: Sphere,
         header: Header,
         footer: Footer,
       }
