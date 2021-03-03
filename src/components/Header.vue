@@ -126,7 +126,7 @@ a {
 
 /* ----------------------------Vue Relative---------------------------- */
 .router-link-exact-active {
-    background-color: blueviolet;
+    background-color: #1d1f20;
     color: white;
 }       
 
