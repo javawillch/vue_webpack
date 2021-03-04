@@ -24,6 +24,8 @@
                 <li><b>2015-2017</b><span> | Business Analyst / Sales Representive @ Jurassic Color Diamond</span></li>
                 </ul>
             </div>
+
+            <!-- <embed src="./Resume_WeiCH.pdf" width="800px" height="2100px" /> -->
         </div>
 
         <div class="box-two">

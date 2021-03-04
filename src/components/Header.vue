@@ -11,8 +11,7 @@
 
             <router-link :to="'/'">{{header.header1}}</router-link>
             <router-link :to="'about'">{{header.header2}}</router-link>
-            <a href="../assets/Resume_WeiCH.pdf">{{header.header3}}</a>
-            <router-link :to="'resume'">{{header.header3}}</router-link>
+            <a href="/static/Resume_WeiCH.pdf" target="_blank">{{header.header3}}</a>
             <router-link :to="'work'">{{header.header4}}</router-link>
 
             <router-link class="nav-link" :to="'/'"> RL hello</router-link>
@@ -22,29 +21,31 @@
 </template>
 
 <script>
+
 export default {
-  name: 'Header',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-      message: 'Copyright© ', 
-      myName: 'Wei Chen-Huang',
-      year: new Date().getFullYear(),
-      header: {
-          header1: 'Info',
-          header2: 'About',
-          header3: 'Resume',
-          header4: 'Work',
-      },
-      headers:[
-          'Info',
-          'About',
-          'Resume',
-          'Work',
-      ],
-    }
-  }
+    name: 'Header',
+        data () {
+            return {
+            msg: 'Welcome to Your Vue.js App',
+            message: 'Copyright© ', 
+            myName: 'Wei Chen-Huang',
+            year: new Date().getFullYear(),
+            header: {
+                header1: 'Info',
+                header2: 'About',
+                header3: 'Resume',
+                header4: 'Work',
+            },
+            headers:[
+                'Info',
+                'About',
+                'Resume',
+                'Work',
+            ],
+        }
+    },
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -129,12 +130,5 @@ a {
     background-color: #1d1f20;
     color: white;
 }       
-
-/* ----------------------------Other---------------------------- */
-.pic {
-    /* background-image: url(/static/SkyJumping.gif); */
-    background-color: #ffaa44;
-    height: 360px;
-}
      
 </style>
