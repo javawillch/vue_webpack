@@ -11,7 +11,7 @@
 
             <router-link :to="'/'">{{header.header1}}</router-link>
             <router-link :to="'about'">{{header.header2}}</router-link>
-            <a href="/static/Resume_WeiCH.pdf" target="_blank">{{header.header3}}</a>
+            <a href="./static/Resume_WeiCH.pdf" target="_blank">{{header.header3}}</a>
             <router-link :to="'work'">{{header.header4}}</router-link>
 
             <router-link class="nav-link" :to="'/'"> RL hello</router-link>
@@ -84,11 +84,17 @@ export default {
 }
 
 .header .subroute{
-    width: 100%;
+    /* max-width: 100%; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
     /* align-self: flex-end; */
+}
+
+@media screen and (max-width:768px) {
+    .header .subroute{
+        display: list-item;
+    }
 }
 
 .header .subroute a{
