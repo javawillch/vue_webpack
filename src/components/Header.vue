@@ -1,8 +1,11 @@
 <template>
     <div class="header">
-        <a class="selfname" href="/">
+        <!-- <a class="selfname" href="/">
             <h2>{{myName}}</h2>
-        </a>
+        </a> -->
+        <router-link :to="'/'" class="selfname" >
+            <h2>{{myName}}</h2>
+        </router-link>
         <div class="subroute">
             <!-- <a href="/index.html">{{header.header1}}</a>
             <a href="/pages/about.html">{{header.header2}}</a>
@@ -136,5 +139,10 @@ a {
     background-color: #1d1f20;
     color: white;
 }       
+
+.selfname {
+    background-color: white;
+    color: #1d1f20; 
+}
      
 </style>
