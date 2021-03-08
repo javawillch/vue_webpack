@@ -14,8 +14,8 @@
             <a href="./static/Resume_WeiCH.pdf" target="_blank">{{header.header3}}</a>
             <router-link :to="'work'">{{header.header4}}</router-link>
 
-            <router-link class="nav-link" :to="'/'"> RL hello</router-link>
-            <router-link class="nav-link" :to="'about'"> RL helloVUE</router-link>        
+            <!-- <router-link class="nav-link" :to="'/'"> RL hello</router-link>
+            <router-link class="nav-link" :to="'about'"> RL helloVUE</router-link>         -->
         </div>     
     </div>   
 </template>

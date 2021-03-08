@@ -76,79 +76,49 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-/* ----------------------------header and footer---------------------------- */
-.header{
-    display: flex;   
-    margin: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-weight: 700;
-}
-
-.header .selfname{
-    width: 100%;
-}
-
-.header .subroute{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    /* align-self: flex-end; */
-}
-
-.header .subroute a{
-    padding: 0px 15px;
+/* ----------------------------page-about---------------------------- */
+.page-about{
+  color: whitesmoke;
+  /* line-height: 1.5rem; */
+  min-height: 86vh;
+  /* margin: 15px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
 }            
 
-.footer .copyright{
-    display: flex;
-    justify-content: center;
+.page-about h1{
+  font-size: 4rem;
+  font-size: 500;
 }
 
-.footer .social-media-bars{
-    display: flex;
-    justify-content: center;
+h5{
+  background-color: whitesmoke;
+  color: black;
+  display: inline-block;
+  font-size: 1.25rem;
 }
 
-.footer .social-media-bars .svg-inline--fa{
-    margin: 5px;
-    padding: 0px 7px;
+.page-about p{
+  opacity: 1;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
-/* ----------------------------other detail---------------------------- */
-.header a:link{
-    /* //設定還沒有瀏覽過的連結 */
-    text-decoration:none;
-    background-color:#1d1f20;
+@media screen and (max-width: 480px) {
+  .page-about h1{
+    font-size: 2rem;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    /* width: 100%;
+    margin: auto; */
+  }
 }
-.header a:visited {
-    /* //設定已經瀏覽過的連結 */
-    text-decoration:none;
-}
-.header .subroute a:hover, .header .subroute a:active{
-    /* //設定滑鼠移經的連結 */
-    /* //設定正在點選的連結 */
-    text-decoration: none;
-    background-color: #fff;
-    color: #000;;
-}
-
-.header a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.svg-inline--fa{
-    display: inline-block;
-    font-size: inherit;
-    height: 1em;
-    overflow: visible;
-    vertical-align: -.125em;
-} 
-
-
-
 /* ----------------------------Sphere---------------------------- */
 /* *{
   outline: 1px solid #0f0;
