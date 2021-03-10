@@ -144,5 +144,4 @@ a {
     background-color: white;
     color: #1d1f20; 
 }
-     
 </style>

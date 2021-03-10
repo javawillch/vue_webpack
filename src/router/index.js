@@ -7,6 +7,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Sphere from '@/components/Sphere'
 // import About from '@/components/About'
+import P5Mouse from '@/components/P5Mouse'
 
 
 Vue.use(Router)
@@ -48,6 +49,15 @@ export default new Router({
         header: Header,
         footer: Footer,
       }
-    }
+    },
+    {
+      path: '/work',
+      name: 'P5Mouse',
+      components: {
+        default: P5Mouse,
+        header: Header,
+        footer: Footer,
+      }
+    }    
   ]
 })

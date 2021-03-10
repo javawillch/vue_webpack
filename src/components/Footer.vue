@@ -137,6 +137,7 @@ export default {
 .footer .copyright{
     display: flex;
     justify-content: center;
+    color: #000;
 }
 
 .footer .social-media-bars{
