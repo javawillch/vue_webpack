@@ -1,6 +1,6 @@
 <template>
   <div style="border:2px solid #F00; width:100%; height:100px;" id="app">
-    <!-- <iframe src="./p5_mouse.html" scrolling='no'></iframe> -->
+    <iframe src="./Sphere.html" scrolling='no'></iframe>
     <!-- <Canvas/> -->
   </div>
 </template>
