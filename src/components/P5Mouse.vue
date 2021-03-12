@@ -10,6 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js"></script> 
 
 <script>
+// import P5 from 'p5'
 // import Canvas from '@/compenents/Canvas'
 
 var allParticles = [];
