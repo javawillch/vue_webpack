@@ -286,9 +286,9 @@ a {
 }
 
 /* ----------------------------Other---------------------------- */
-.pic {
+/* .pic {
   /* background-image: url(/static/SkyJumping.gif); */
   background-color: #ffaa44;
   height: 360px;
-}
+} */
 </style>
