@@ -9,6 +9,7 @@ import Sphere from '@/components/Sphere'
 // import About from '@/components/About'
 import P5Mouse from '@/components/P5Mouse'
 import P5Test from '@/components/P5Test'
+import GemWorldMap from '@/components/GemWorldMap'
 
 
 Vue.use(Router)
@@ -59,6 +60,15 @@ export default new Router({
         header: Header,
         footer: Footer,
       }
-    }    
+    },
+    {
+      path: '/gemworldmap',
+      name: 'gemworldmap',
+      components: {
+        default: GemWorldMap,
+        header: Header,
+        footer: Footer,
+      }
+    }        
   ]
 })

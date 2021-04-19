@@ -20,7 +20,15 @@
         </div>
       </div>
       <div class="item">
-        <div class="pic"></div>
+        <router-link :to="'gemworldmap'">
+          <div class="pic">
+            <img src="./../assets/worldmap.jpg" height="100%" />
+          </div>
+          <div class="txt">
+            <h2>Gemstone World Map</h2>
+            <p>Site Project</p>
+          </div>
+        </router-link>
       </div>
       <!-- </div>
     <div class="itemlst"> -->
