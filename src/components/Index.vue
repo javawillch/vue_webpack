@@ -12,23 +12,21 @@
       </div>
       <div class="item">
         <div class="pic">
+          <img src="./../assets/AzureProject.png" height="100%" />
+        </div>
+        <div class="txt">
+          <h2>Azure Analysis Services / Azure Data Factory / Logic App</h2>
+          <p>Trend Micro</p>
+        </div>
+      </div>      
+      <div class="item">
+        <div class="pic">
           <img src="./../assets/DataFlow.gif" height="100%" />
         </div>
         <div class="txt">
           <h2>Global Data Warehouse Pipeline</h2>
           <p>Trend Micro</p>
         </div>
-      </div>
-      <div class="item">
-        <router-link :to="'gemworldmap'">
-          <div class="pic">
-            <img src="./../assets/worldmap.jpg" height="100%" />
-          </div>
-          <div class="txt">
-            <h2>Gemstone World Map</h2>
-            <p>Site Project</p>
-          </div>
-        </router-link>
       </div>
       <!-- </div>
     <div class="itemlst"> -->
@@ -40,6 +38,17 @@
           <h2>Audit System for Banking</h2>
           <p>HY Tech</p>
         </div>
+      </div>
+      <div class="item">
+        <router-link :to="'gemworldmap'">
+          <div class="pic">
+            <img src="./../assets/worldmap.jpg" height="100%" />
+          </div>
+          <div class="txt">
+            <h2>Gemstone World Map</h2>
+            <p>Site Project</p>
+          </div>
+        </router-link>        
       </div>
       <div class="item">
         <div class="pic">
@@ -55,9 +64,6 @@
           <h2>Babe Care Website</h2>
           <p>III</p>
         </div>
-      </div>
-      <div class="item">
-        <div class="pic"></div>
       </div>
       <!-- </div>
     <div class="itemlst"> -->
