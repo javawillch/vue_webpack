@@ -751,18 +751,7 @@ const GemWroldMap = {
       countrygem: countrygem
     };
   },
-  props: {
-    vm: Object
-  },
   computed: {
-    setCountry: {
-      get() {
-        return this.filter
-      },
-      set(countryname) {
-        this.filter = countryname
-      }
-    },
     now_area: function(){
       let nthis = this
       let result = countrygem.filter(function(obj){
@@ -771,13 +760,11 @@ const GemWroldMap = {
       if(result.length==0){
         return null;
       }
-      console.log("111");
       return result[0];
     }
   },
   methods: {
     setFilter() {
-      console.log(this.currentCountry)
       this.filter = this.currentCountry;
     }
   }
