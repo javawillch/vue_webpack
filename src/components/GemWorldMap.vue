@@ -272,7 +272,7 @@
         d="M802.28,297.15l-0.1,4.43l1.05,1.73l1.82-2.12l-0.48-3.85L802.28,297.15L802.28,297.15z" /><path
         id="samar" @mouseenter='setFilter("samar")'
         d="M803.42,293.29l1.82,2.41l0.86,2.31h1.63l-0.29-3.95l-1.82-1.25L803.42,293.29L803.42,293.29z" /><path
-        id="path7462" @mouseenter='setFilter("path7462")'
+        id="mindanao" @mouseenter='setFilter("mindanao")'
         d="M806.96,302.35l0.38,2.89l-3.35,2.7l-2.77,0.29l-2.96,3.18l0.1,1.45l2.77-0.87l1.91-1.25l1.63,4.14l2.87,2.02l1.15-0.39l1.05-1.25l-2.29-2.31l1.34-1.06l1.53,1.25l1.05-1.73l-1.05-2.12l-0.19-4.72L806.96,302.35L806.96,302.35z" /><path
         id="luzon" @mouseenter='setFilter("luzon")'
         d="M791.38,272.97l-2.58,1.83l-0.29,5.78l4.02,7.8l1.34,1.06l1.72-1.16l2.96,0.48l0.57,2.6l2.2,0.19l1.05-1.44l-1.34-1.83l-1.63-1.54l-3.44-0.38l-1.82-2.99l2.1-3.18l0.19-2.79l-1.43-3.56L791.38,272.97L791.38,272.97z" /><path
@@ -873,6 +873,7 @@ let countrygem = [
 		gems: [
       "Amethyst",
       "Andalusite",
+      "Emerld",
       "Chrysoberyl",
       "Opal"
 		]
@@ -922,6 +923,20 @@ let countrygem = [
 		]
 	},
 	{
+		country: "irian jaya",
+		countryname: "Indonesia",
+		gems: [
+			"Pearl",
+		]
+	},
+	{
+		country: "sulawesi",
+		countryname: "Indonesia",
+		gems: [
+			"Pearl",
+		]
+	},
+	{
 		country: "russia",
 		countryname: "Russia",
 		gems: [
@@ -951,14 +966,37 @@ let countrygem = [
 		countryname: "Madagascar",
 		gems: [
       "Chrysoberyl",
+      "Emerld",      
 			"Sapphire"
 		]
 	},
  	{
+		country: "new caledonia",
+		countryname: "New Caledonia",
+		gems: [
+      "Pearl",
+		]
+	}, 
+ 	{
 		country: "nigeria",
 		countryname: "Nigeria",
 		gems: [
+      "Emerld",      
 			"Sapphire"
+		]
+	},
+ 	{
+		country: "mindanao",
+		countryname: "Philippines",
+		gems: [
+      "Pearl",
+		]
+	},
+ 	{
+		country: "palawan",
+		countryname: "Philippines",
+		gems: [
+      "Pearl",
 		]
 	},
 	{
@@ -1027,6 +1065,7 @@ let countrygem = [
 		countryname: "Zimbabwe",
 		gems: [
       "Chrysoberyl",
+      "Emerld"      
 		]
 	},
 ];
