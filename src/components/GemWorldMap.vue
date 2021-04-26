@@ -852,12 +852,23 @@ let gemdata = [
 
 let countrygem = [
  	{
+		country: "afghanistan",
+		countryname: "Afghanistan",
+		gems: [
+      "Ruby",
+      "Spinel",
+		]
+	},
+ 	{
 		country: "australia",
 		countryname: "Australia",
 		gems: [
       "Diamond",
       "Opal",
-			"Sapphire"
+			"Blue Sapphire",
+      "Fancy Sapphire",
+      "Spinel",
+      "Topaz"
 		]
 	},
  	{
@@ -871,11 +882,16 @@ let countrygem = [
 		country: "brazil",
 		countryname: "Brazil",
 		gems: [
+      "Alexandrite",
       "Amethyst",
       "Andalusite",
+      "Aquamarine",
       "Emerld",
       "Chrysoberyl",
-      "Opal"
+      "Opal",
+      "Paraiba",
+      "Morganite",
+      "Topaz"     
 		]
 	},
  	{
@@ -896,7 +912,8 @@ let countrygem = [
 		country: "canada",
 		countryname: "Canada",
 		gems: [
-			"Diamond"
+			"Diamond",
+      "Tsavorite",
 		]
 	},
  	{
@@ -911,6 +928,20 @@ let countrygem = [
 		countryname: "Ethiopia",
 		gems: [
 			"Opal"
+		]
+	},
+ 	{
+		country: "germany",
+		countryname: "Germany",
+		gems: [
+			"Demantoid",
+		]
+	},
+ 	{
+		country: "italy",
+		countryname: "Italy",
+		gems: [
+			"Demantoid",
 		]
 	},
 	{
@@ -930,6 +961,16 @@ let countrygem = [
 		]
 	},
 	{
+		country: "kenya",
+		countryname: "Kenya",
+		gems: [
+      "Demantoid",
+			"Ruby",
+			"Blue Sapphire",
+      "Fancy Sapphire"      
+		]
+	},
+	{
 		country: "sulawesi",
 		countryname: "Indonesia",
 		gems: [
@@ -940,6 +981,8 @@ let countrygem = [
 		country: "russia",
 		countryname: "Russia",
 		gems: [
+      "Alexandrite",
+      "Demantoid",
       "Diamond",
 			"Emerald",
 		]
@@ -951,7 +994,10 @@ let countrygem = [
       "Chrysoberyl",
       "Jade",
 			"Ruby",
-			"Sapphire"
+			"Blue Sapphire",
+      "Fancy Sapphire",
+      "Spinel",
+      "Topaz"
 		]
 	},
 	{
@@ -959,15 +1005,52 @@ let countrygem = [
 		countryname: "Mexico",
 		gems: [
       "Opal",
+      "Topaz"
 		]
 	},
  	{
 		country: "madagascar",
 		countryname: "Madagascar",
 		gems: [
+      "Aquamarine",
       "Chrysoberyl",
       "Emerld",      
-			"Sapphire"
+			"Blue Sapphire",
+      "Fancy Sapphire",
+      "Ruby",
+      "Morganite",
+      "Spinel",
+      "Topaz"
+		]
+	},
+ 	{
+		country: "malawi",
+		countryname: "Malawi",
+		gems: [
+      "Ruby",
+		]
+	},
+ 	{
+		country: "mozambique",
+		countryname: "Mozambique",
+		gems: [
+      "Aquamarine",
+      "Morganite",
+      "Ruby",
+		]
+	},
+ 	{
+		country: "namibia",
+		countryname: "Namibia",
+		gems: [
+      "Demantoid",
+		]
+	},
+ 	{
+		country: "nepal",
+		countryname: "Nepal",
+		gems: [
+      "Ruby",
 		]
 	},
  	{
@@ -981,8 +1064,10 @@ let countrygem = [
 		country: "nigeria",
 		countryname: "Nigeria",
 		gems: [
+      "Aquamarine",
       "Emerld",      
-			"Sapphire"
+			"Sapphire",
+      "Topaz"
 		]
 	},
  	{
@@ -999,11 +1084,22 @@ let countrygem = [
       "Pearl",
 		]
 	},
+ 	{
+		country: "pakistan",
+		countryname: "Pakistan",
+		gems: [
+      "Ruby",
+      "Spinel",
+      "Tsavorite",
+      "Topaz",
+		]
+	},
 	{
 		country: "south africa",
 		countryname: "South Africa",
 		gems: [
 			"Diamond",
+      "Tsavorite",
 		]
 	},
 	{
@@ -1017,24 +1113,44 @@ let countrygem = [
 		country: "sri lanka",
 		countryname: "Sri Lanka",
 		gems: [
+      "Alexandrite",
       "Andalusite",
       "Chrysoberyl",
 			"Ruby",
-			"Sapphire"
+			"Blue Sapphire",
+      "Fancy Sapphire",
+      "Padparadscha",
+      "Spinel",
+      "Tsavorite",
 		]
 	},
  	{
 		country: "tanzania",
 		countryname: "Tanzania",
 		gems: [
-			"Tanzanite"
+      "Aquamarine",
+			"Tanzanite",
+      "Ruby",
+			"Blue Sapphire",
+      "Fancy Sapphire",
+      "Spinel",
+      "Tsavorite",
 		]
 	},
  	{
 		country: "thailand",
 		countryname: "Thailand",
 		gems: [
-			"Sapphire"
+			"Blue Sapphire",
+      "Fancy Sapphire",
+      "Spinel",
+		]
+	},
+ 	{
+		country: "tajikistan",
+		countryname: "Tajikistan",
+		gems: [
+      "Spinel",
 		]
 	},
 	{
@@ -1042,7 +1158,10 @@ let countrygem = [
 		countryname: "USA",
 		gems: [
 			"Emerald",
-			"Sapphire"
+			"Blue Sapphire",
+      "Fancy Sapphire",
+      "Morganite",
+      "Topaz",
 		]
 	},
 	{
@@ -1051,11 +1170,22 @@ let countrygem = [
 		gems: [
       "Amethyst",
 		]
-	}, 
+	},
+	{
+		country: "vietnam",
+		countryname: "Vietnam",
+		gems: [
+      "Ruby",
+			"Blue Sapphire",
+      "Fancy Sapphire",
+      "Spinel",  
+		]
+	},
 	{
 		country: "zambia",
 		countryname: "Zambia",
 		gems: [
+      "Aquamarine",
       "Amethyst",
       "Emerld"
 		]
