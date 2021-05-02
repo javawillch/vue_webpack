@@ -10,6 +10,7 @@ import Sphere from '@/components/Sphere'
 import P5Mouse from '@/components/P5Mouse'
 import P5Test from '@/components/P5Test'
 import GemWorldMap from '@/components/GemWorldMap'
+import "bootstrap/dist/css/bootstrap.css"
 
 
 Vue.use(Router)
