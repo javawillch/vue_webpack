@@ -1,8 +1,9 @@
 <template>
   <div class="main_content">
     <div class="itemlst">
-      <div class="item">
+      <div class="item col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="pic">
+          <!-- <img v-bind:src="imgSrc" alt="">  test -->
           <img src="./../assets/Cube.gif" height="100%" />
         </div>
         <div class="txt">
@@ -10,7 +11,7 @@
           <p>Trend Micro</p>
         </div>
       </div>
-      <div class="item">
+      <div class="item col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="pic">
           <img src="./../assets/AzureProject.png" height="100%" />
         </div>
@@ -19,7 +20,7 @@
           <p>Trend Micro</p>
         </div>
       </div>      
-      <div class="item">
+      <div class="item col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="pic">
           <img src="./../assets/DataFlow.gif" height="100%" />
         </div>
@@ -30,7 +31,7 @@
       </div>
       <!-- </div>
     <div class="itemlst"> -->
-      <div class="item">
+      <div class="item col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="pic">
           <img src="./../assets/AuditSystem.gif" height="100%" />
         </div>
@@ -39,8 +40,8 @@
           <p>HY Tech</p>
         </div>
       </div>
-      <div class="item">
-        <router-link :to="'gemworldmap'">
+      <router-link :to="'gemworldmap'">
+        <div class="item col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
           <div class="pic">
             <img src="./../assets/worldmap.jpg" height="100%" />
           </div>
@@ -48,26 +49,27 @@
             <h2>Gemstone World Map</h2>
             <p>Site Project</p>
           </div>
-        </router-link>        
-      </div>
-      <div class="item">
+        </div>
+      </router-link>   
+      <div class="item col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="pic">
-          <video
+          <img src="./../assets/BabeQ.gif" height="100%" />
+          <!-- <video
             src="./../assets/BabeQ.mp4"
             muted="muted"
             autoplay="autoplay"
             loop="loop"
-            height="100%"
-          ></video>
+            height="100%" 
+          /> -->
         </div>
         <div class="txt">
           <h2>Babe Care Website</h2>
           <p>III</p>
         </div>
       </div>
-      <!-- </div>
+    <!-- </div>
     <div class="itemlst"> -->
-      <div class="item">
+      <div class="item col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="pic">
           <img src="./../assets/BungeeJumping.gif" height="100%" />
         </div>
@@ -76,7 +78,7 @@
           <p>in Macau</p>
         </div>
       </div>
-      <div class="item">
+      <div class="item col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="pic">
           <img src="./../assets/Skydiving.gif" height="100%" />
         </div>
@@ -85,7 +87,7 @@
           <p>in Cairns</p>
         </div>
       </div>
-      <div class="item">
+      <div class="item col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="pic">
           <img src="./../assets/SkyJumping.gif" height="100%" />
         </div>
@@ -103,7 +105,7 @@ export default {
   name: "HelloWorld",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App",
+      imgSrc: "Welcome to Your Vue.js App",
     };
   },
 };
@@ -128,30 +130,36 @@ a {
 }
 */
 /* ----------------------------main content---------------------------- */
+.main_content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .itemlst {
   width: 100%;
   max-width: 1800px;
   margin: auto;
-  /* background-color: #eee;
-    height:  440px;
-    display: block;
-    color: #fff;
-    text-align: left;
-    background-size: cover;
-    background-position: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    padding: 1vw;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: relative;
-    box-shadow: 0 10px 20px -10px rgba(0,0,0,.25);
-    transition-duration: .5s;
-    overflow: hidden;        */
+  
+  background-color: #eee;
+  /* height:  440px; */
+  display: block;
+  color: #fff;
+  text-align: left;
+  background-size: cover;
+  background-position: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  /* padding: 1vw; */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,.25);
+  transition-duration: .5s;
+  overflow: hidden;       
 }
 
 /* 
@@ -163,16 +171,24 @@ a {
 */
 @media screen and (min-width: 769px) {
   .item {
-    width: 32vw;
+    /* width: 32vw; */
     display: inline-flex;
+    height:  432px;
     /* float: left; */
   }
+
   .item img,
-  .item video,
+  .item video {
+    height:  432px;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;    
+  }
   .item p,
   .item h2 {
     /* width: 480px;  */
-    width: 32vw;
+    /* width: 32vw; */
+    /* height:  440px; */
     overflow: hidden;
     position: relative;
     object-fit: cover;
@@ -181,7 +197,8 @@ a {
   .item .txt,
   .item .pic {
     /* width: 480px; */
-    width: 32vw;
+    /* width: 32vw; */
+    height:  432px;
     overflow: hidden;
     position: relative;
   }
@@ -189,7 +206,7 @@ a {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .item {
-    width: 45vw;
+    /* width: 45vw; */
     display: inline-flex;
   }
   .item img,
@@ -197,7 +214,7 @@ a {
   .item p,
   .item h2 {
     /* width: 480px; */
-    max-width: 45vw;
+    /* max-width: 45vw; */
     overflow: hidden;
     position: relative;
     object-fit: cover;
@@ -205,23 +222,40 @@ a {
   .item .txt,
   .item .pic {
     /* width: 480px; */
-    max-width: 45vw;
+    /* max-width: 45vw; */
     overflow: hidden;
     position: relative;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .item img {
-    /* width: 480px; */
-    width: 100%;
+  .item {
+    display: inline-flex;
+    height: 300px;
   }
 
+  .item img,
   .item video {
-    max-width: 100vw;
+    max-width: 100vw;    
+    height: 300px;
     overflow: hidden;
+    position: relative;
+    object-fit: cover;    
+  }
+  .item p,
+  .item h2 {
+    overflow: hidden;
+    position: relative;
     object-fit: cover;
   }
+
+  .item .txt,
+  .item .pic {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+
 }
 
 .itemlst .item {
@@ -231,7 +265,7 @@ a {
   /* margin: 0 15px; */
 }
 
-.itemlst .item .txt {
+.item .txt {
   position: absolute;
   top: 0;
   right: 0;
