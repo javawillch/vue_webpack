@@ -3,10 +3,10 @@
         <!-- <a class="selfname" href="/">
             <h2>{{myName}}</h2>
         </a> -->
-        <router-link :to="'/'" class="selfname" >
+        <router-link :to="'/'" class="selfname col-6" >
             <h2>{{myName}}</h2>
-        </router-link>
-        <div class="subroute">
+        </router-link>       
+        <div class="subroute col-6">
             <!-- <a href="/index.html">{{header.header1}}</a>
             <a href="/pages/about.html">{{header.header2}}</a>
             <a href="/static/Resume_WeiCH.pdf">{{header.header3}}</a>
@@ -82,10 +82,6 @@ export default {
     font-weight: 700;
 }
 
-.header .selfname{
-    width: 100%;
-}
-
 .header .subroute{
     /* max-width: 100%; */
     display: flex;
@@ -102,7 +98,20 @@ export default {
 
 .header .subroute a{
     padding: 0px 15px;
-}            
+}
+
+@media screen and (max-width: 480px) {
+    .header{
+        margin: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-weight: 700;
+    }
+
+    .header .subroute a{
+        padding: 0px 10px;
+    }    
+}
 /* ----------------------------other detail---------------------------- */
 a:link{
     /* //設定還沒有瀏覽過的連結 */

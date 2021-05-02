@@ -6,14 +6,13 @@
         <br> World Map
       </h1>
       <hr/>
-    
       <div class="producegem" v-if="now_area">
         <h2>{{ now_area.countryname }}</h2>  
         <li v-for="gem in now_area.gems">
           {{gem}}
         </li>
       </div>
-    </div>
+    </div>  
 
     <svg
       xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -743,6 +742,7 @@
         id="crete" @mouseenter='setFilter("crete")'
         d="M516.76,230.59l1.63,0.05l0.68,1.01h2.37l1.58-0.58l0.53,0.64l-1.05,1.38l-4.63,0.16l-0.84-1.11l-0.89-0.53L516.76,230.59L516.76,230.59z" />
     </svg>
+
   </div>
 </template>
 
@@ -1214,6 +1214,7 @@ svg {
 
 .pagegemworldmap {
 	background-color: #222;
+  overflow-y: auto;
 }
 
 path {
@@ -1254,5 +1255,30 @@ hr {
   -webkit-mask-size: cover;
   -webkit-mask-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjQxLjg2OCwxMTQuODg4IDExOC4wNjIsMTU4Ljg3NyAyNDAuODU4LDg3Ljk4MSAyNDAuODU4LDAgICAiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwb2x5Z29uIHBvaW50cz0iMjYuNzI3LDE0MS4xMTMgMjYuNzI3LDM3MC44ODcgMTAyLjkyLDMyNi44OTcgMTAyLjkyLDE4NS4xMDMgICAiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwb2x5Z29uIHBvaW50cz0iMjcxLjE0MSwwIDI3MS4xNDEsODcuOTgxIDM5My45MzgsMTU4Ljg3NyA0NzAuMTMxLDExNC44ODggICAiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwb2x5Z29uIHBvaW50cz0iMjU2LDExNC4yMDcgMTMzLjIwMywxODUuMTAzIDEzMy4yMDMsMzI2Ljg5NyAyNTYsMzk3Ljc5MyAzNzguNzk2LDMyNi44OTcgMzc4Ljc5NiwxODUuMTAzICAgIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjQwOS4wNzksMTg1LjEwMyA0MDkuMDc5LDMyNi44OTcgNDg1LjI3MywzNzAuODg3IDQ4NS4yNzMsMTQxLjExMyAgICIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBvbHlnb24gcG9pbnRzPSIxMTguMDYyLDM1My4xMjIgNDEuODY4LDM5Ny4xMTIgMjQwLjg1OCw1MTIgMjQwLjg1OCw0MjQuMDE5ICAgIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjM5My45MzgsMzUzLjEyMiAyNzEuMTQxLDQyNC4wMTkgMjcxLjE0MSw1MTIgNDcwLjEzMSwzOTcuMTEyICAgIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
   background-color: rgb(21, 255, 0);
+}
+
+
+@media screen and (min-width: 1100px) {
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 1009px) {
+
+}
+
+@media screen and (max-width: 480px) {
+  svg {
+    height: 80vh;
+  }
+
+  .title_area {
+    height: 20vh;
+    position: relative;
+    float: flex;
+    right: 7%;
+    top: 60%;
+    color: white;
+    font-size: 10px;
+  }
 }
 </style>
