@@ -1,7 +1,7 @@
 <template>
   <div class="pagegemworldmap">
     <div class="title_area">
-      <h1>
+      <h1> 
         <span class="gemicon">&nbsp;</span>Gemstone
         <br> World Map
       </h1>
@@ -1210,6 +1210,7 @@ let countrygem = [
 
 svg {
 	height: 100vh;
+  overflow-y: auto;
 }
 
 .pagegemworldmap {
@@ -1227,14 +1228,6 @@ path {
 path:hover {
 	fill: #B99362;
 	transform: translate(-3px, -3px);
-}
-
-.title_area {
-	position: absolute;
-	right: 7%;
-	top: 15%;
-	color: white;
-	font-size: 20px;
 }
 
 hr {
@@ -1259,26 +1252,71 @@ hr {
 
 
 @media screen and (min-width: 1100px) {
-
+  .title_area {
+    position: absolute;
+    right: 7%;
+    top: 15%;
+    color: white;
+    font-size: 20px;
+  }
 }
-
+/* 
 @media screen and (min-width: 481px) and (max-width: 1009px) {
+  .title_area {
+    position: absolute;
+    right: 7%;
+    top: 15%;
+    color: white;
+    font-size: 20px;
+  }
+} */
 
-}
+@media screen and (max-width: 1009px) {
 
-@media screen and (max-width: 480px) {
+  .gemicon {
+    display: inline-block;
+    top: 2px;
+    left: 0.5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    -webkit-mask-size: cover;
+    -webkit-mask-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjQxLjg2OCwxMTQuODg4IDExOC4wNjIsMTU4Ljg3NyAyNDAuODU4LDg3Ljk4MSAyNDAuODU4LDAgICAiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwb2x5Z29uIHBvaW50cz0iMjYuNzI3LDE0MS4xMTMgMjYuNzI3LDM3MC44ODcgMTAyLjkyLDMyNi44OTcgMTAyLjkyLDE4NS4xMDMgICAiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwb2x5Z29uIHBvaW50cz0iMjcxLjE0MSwwIDI3MS4xNDEsODcuOTgxIDM5My45MzgsMTU4Ljg3NyA0NzAuMTMxLDExNC44ODggICAiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwb2x5Z29uIHBvaW50cz0iMjU2LDExNC4yMDcgMTMzLjIwMywxODUuMTAzIDEzMy4yMDMsMzI2Ljg5NyAyNTYsMzk3Ljc5MyAzNzguNzk2LDMyNi44OTcgMzc4Ljc5NiwxODUuMTAzICAgIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjQwOS4wNzksMTg1LjEwMyA0MDkuMDc5LDMyNi44OTcgNDg1LjI3MywzNzAuODg3IDQ4NS4yNzMsMTQxLjExMyAgICIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBvbHlnb24gcG9pbnRzPSIxMTguMDYyLDM1My4xMjIgNDEuODY4LDM5Ny4xMTIgMjQwLjg1OCw1MTIgMjQwLjg1OCw0MjQuMDE5ICAgIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjM5My45MzgsMzUzLjEyMiAyNzEuMTQxLDQyNC4wMTkgMjcxLjE0MSw1MTIgNDcwLjEzMSwzOTcuMTEyICAgIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+    background-color: rgb(21, 255, 0);
+  }
   svg {
-    height: 80vh;
+    height: 77vh;
   }
 
   .title_area {
-    height: 20vh;
-    position: relative;
-    float: flex;
-    right: 7%;
+    height: 23vh;
+    /* position: fixed; */
+    /* display: inline-flex; */
+    float: left;
+    left: 7%;
     top: 60%;
     color: white;
     font-size: 10px;
+  }
+
+  li {
+    display: inline-flex;
+    margin: 3px;
+    background-color: #B99362;
+    color: #222
+  }
+
+  h1, h2 {
+    font-size: 20px;
+  }
+
+  hr {
+    /* width: 100px;
+    margin-left: 0;
+    border: none;
+    border-bottom: solid 1.5px white; */
+    display: none;
   }
 }
 </style>
